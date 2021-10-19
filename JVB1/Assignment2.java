@@ -1,5 +1,5 @@
 /*
-* This file contains code for SmoothStack Essentials assignment1
+* This file contains code for SmoothStack Essentials Java Basics 1 Assignment2
 * @author Bruce Haidrey
 */
 
@@ -45,6 +45,7 @@ public class Assignment2 {
         System.out.println("Incorrect, guess again");
       }
     }
+
     // close the scanner
     scan.close();
   }
