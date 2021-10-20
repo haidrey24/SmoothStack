@@ -1,0 +1,4 @@
+Append to out.txt
+Append to out.txt again
+Append to out.txt last time
+This method works! Assignment2 complete
