@@ -13,7 +13,9 @@ This class appends text to an existing file
 */
 public class Append {
   /*
-  * this method prints the files and sub-directories in a given directory
+  * This method prints text to the end of an existing file
+  * @param path - path of the output text file
+  * @param text - text to append to the output file
   */
   private void printToFile(String path, String text) {
     // initialize your file with the given path
