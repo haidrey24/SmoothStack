@@ -27,6 +27,9 @@ public class Rectangle implements Shape {
     return this.height * this.width;
   }
 
+  /*
+  * @param args
+  */
   public static void main(String[] args) {
     // create an instance of the class
     Rectangle rec = new Rectangle(10,13);
