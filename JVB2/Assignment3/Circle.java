@@ -26,6 +26,9 @@ public class Circle implements Shape {
     return Math.PI * this.radius * this.radius;
   }
 
+  /*
+  * @param args
+  */
   public static void main(String[] args) {
     // create an instance of the class
     Circle cir = new Circle(3);
