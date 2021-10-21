@@ -11,6 +11,9 @@ This class gets a list of all file/directory names and their sub-directories
 public class Assignment1 {
   /*
   * this method prints the files and sub-directories in a given directory
+  * @param files - list of files in directory & sub-directory
+  * @param index - to access an index in the file array
+  * @param level - keeps track of how many levels into the sub-directory you go
   */
   private void printFiles(File[] files, int index, int level) {
     // if there are no more files terminate
