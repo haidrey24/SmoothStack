@@ -65,6 +65,8 @@ public class Assignment1 {
 
   /*
   * Helper function for patterns 3 and 4
+  * @param width - number of stars to print
+  * @param padding - number of spaces on each side of the stars
   */
   private static void printLine(int width, int padding)
   {
