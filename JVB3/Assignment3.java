@@ -13,7 +13,9 @@ This class counts the frequency of a character in the file
 */
 public class Assignment3 {
   /*
-  * this method prints the files and sub-directories in a given directory
+  * This method counts the frequencies of a specific character in a file
+  * @param c - character to count
+  * @param path - path to the file
   */
   private void frequency(char c, String path) {
     // create file and scanner
