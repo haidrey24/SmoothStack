@@ -26,7 +26,10 @@ public class Triangle implements Shape {
   public double calculateArea() {
     return (this.height * this.width) / 2;
   }
-
+  
+ /*
+  * @param args
+  */
   public static void main(String[] args) {
     // create an instance of the class
     Triangle tri = new Triangle(10,10);
