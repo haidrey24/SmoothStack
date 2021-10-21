@@ -7,7 +7,7 @@ interface Shape {
   /*
   * calculate the area of the shape
   */
-  double calculateArea();
+  public double calculateArea();
 
   /*
   * display the area of the shape
