@@ -4,13 +4,16 @@
 */
 
 interface Shape {
-  // calculate the area of the shape
-  public double calculateArea();
+  /*
+  * calculate the area of the shape
+  */
+  double calculateArea();
 
-  // display the area of the shape
+  /*
+  * display the area of the shape
+  */
   default void display()
   {
-    // double area = calculateArea();
     System.out.println("Area of the shape is: " + calculateArea());
   }
 }
