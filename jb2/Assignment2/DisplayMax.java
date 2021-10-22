@@ -6,7 +6,7 @@
 /*
 This class constructs a 2D array and finds the max number. It also show its position in the array
 */
-public class Assignment2 {
+public class DisplayMax {
 
   /*
   * Finds the max number and its position
@@ -46,7 +46,7 @@ public class Assignment2 {
   */
   public static void main(String[] args) {
     // create instance of the class
-    Assignment2 a = new Assignment2();
+    DisplayMax a = new DisplayMax();
 
     // sample arrays to test first and last spots on array
     int[][] arr = {{0, 1, 2}, {3, 4, 5}, {6, 7, 8, 9}};
@@ -54,6 +54,7 @@ public class Assignment2 {
 
     // call the functions
     a.findMax(arr);
+    System.out.println();
     a.findMax(arr2);
   }
 

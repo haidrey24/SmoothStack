@@ -8,7 +8,7 @@ import java.io.File;
 /*
 This class gets a list of all file/directory names and their sub-directories
 */
-public class Assignment1 {
+public class PrintAllFiles {
   /*
   * this method prints the files and sub-directories in a given directory
   * @param files - list of files in directory & sub-directory
@@ -56,7 +56,7 @@ public class Assignment1 {
   */
   public static void main(String[] args) {
     // create instance to call the method above
-    Assignment1 a = new Assignment1();
+    PrintAllFiles a = new PrintAllFiles();
     // create a string to the file path
     String directory = "/Users/brucehaidrey/Documents/SmoothStack";
     File dir = new File(directory);

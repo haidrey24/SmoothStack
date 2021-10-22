@@ -11,7 +11,7 @@ import java.util.NoSuchElementException;
 /*
 This class counts the frequency of a character in the file
 */
-public class Assignment3 {
+public class Frequency {
   /*
   * This method counts the frequencies of a specific character in a file
   * @param c - character to count
@@ -64,13 +64,13 @@ public class Assignment3 {
   */
   public static void main(String[] args) {
     // create a path to a text file
-    String path = "/Users/brucehaidrey/Documents/SmoothStack/JVB3/Assignment2/out.txt";
+    String path = "/Users/brucehaidrey/Documents/SmoothStack/jb3/Assignment2/out.txt";
     // retrieve the first string argument and turn it into a char
     String str = args[0];
     char ch = str.charAt(0);
 
     // create an instance of the class and call the above method
-    Assignment3 a = new Assignment3();
+    Frequency a = new Frequency();
     a.frequency(ch, path);
   }
 }

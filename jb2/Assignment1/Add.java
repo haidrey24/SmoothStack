@@ -6,7 +6,7 @@
 /*
 This class adds all the values passed in by the command line
 */
-public class Assignment1 {
+public class Add {
 
   /*
   * @param args

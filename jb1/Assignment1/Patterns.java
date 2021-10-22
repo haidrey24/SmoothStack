@@ -6,7 +6,7 @@
 /*
 * This class prints out the desired pattern
 */
-public class Assignment1 {
+public class Patterns {
 
   // constants to use rather than hard coding iterations
   private static final int ONE = 1;
