@@ -3,6 +3,9 @@
 * @author Bruce Haidrey
 */
 
+/*
+* This class prints out the desired pattern
+*/
 public class Assignment1 {
 
   // constants to use rather than hard coding iterations

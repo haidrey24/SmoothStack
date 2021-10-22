@@ -6,7 +6,9 @@
 import java.util.Scanner;
 import java.util.Random;
 
-
+/*
+* This class gives the user 5 chances to guess a number selected at random
+*/
 public class Assignment2 {
 
   // create constants to use below
