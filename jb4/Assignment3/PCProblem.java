@@ -12,8 +12,9 @@ import java.lang.Thread;
 * This class implements a Producer/Consumer Problem
 */
 public class PCProblem {
-  // create a list with max capacity of 5
-  private List<Integer> buffer = new ArrayList<Integer>();
+  // create an ArrayList with max capacity of 7
+  private final int SEVEN = 7;
+  private List<Integer> buffer = new ArrayList<Integer>(SEVEN);
 
   /*
   * This method will produce a random number between 0-99 and will add it to the buffer
@@ -29,7 +30,7 @@ public class PCProblem {
         // calling synchronized on this is calling it on the thread
         synchronized(this) {
           // if the buffer is full, wait
-          while (buffer.size() == 5) {
+          while (buffer.size() == SEVEN) {
             wait();
             System.out.println("producer waiting");
           }
@@ -101,7 +102,7 @@ public class PCProblem {
         }
       }
     };
-    
+
     // create runnable for consumer thread
     Runnable r2 = new Runnable() {
       // override run method
@@ -123,6 +124,7 @@ public class PCProblem {
     // start the threads
     p.start();
     c.start();
+
 
   }
 
