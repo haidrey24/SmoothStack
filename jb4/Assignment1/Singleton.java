@@ -7,15 +7,17 @@
 * This class implements a Singleton class with double checked locking
 */
 public class Singleton {
-  // create instance variable and declare volatile to make the var threadsafe
+  // create instance variable and declare volatile to make the var threadsafe.
+  // if declared as private, don't need volatile
   volatile public static Singleton instance = null;
 
-  // only constructor used to create an instance of the class
+  /*
+  * only constructor used to create an instance of the class
+  */
   private Singleton() {}
 
-
   /*
-  * This gets the instance of this class iff no other thread is using the instance
+  * Gets the instance of this class iff no other thread is using the instance
   * This method is threadsafe
   */
   public Singleton getInstance() {
