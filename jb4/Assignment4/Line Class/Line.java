@@ -1,4 +1,3 @@
-package ss.jb4.main;
 
 public class Line {
 	public Line(double x0, double y0, double x1, double y1){
@@ -19,15 +18,15 @@ public class Line {
     public double getDistance() {
         return Math.sqrt((x1 - x0) * (x1 - x0) + (y1 - y0) * (y1 - y0));
     }
-    
+
     // return whether a line is parallel to another
     public boolean parallelTo(Line l) {// if the difference between the slopes is very small, consider them parallel
         if(Math.abs(getSlope() - l.getSlope()) < .0001) {
-            return true;    
+            return true;
         } else {
-            return false;    
-        }  
+            return false;
+        }
     }
-    
+
     private double x0, y0, x1, y1;
 }
