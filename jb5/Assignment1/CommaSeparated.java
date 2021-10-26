@@ -1,5 +1,5 @@
 /*
-* This file contains code for SmoothStack Essentials Java Basics 5 Assignment2
+* This file contains code for SmoothStack Essentials Java Basics 5 Assignment1
 * @author Bruce Haidrey
 */
 
