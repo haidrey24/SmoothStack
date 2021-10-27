@@ -7,7 +7,7 @@ import java.time.Month;
 import java.time.Year;
 import java.time.DayOfWeek;
 import java.time.LocalDate;
-import java.time.temporal.TemporalAdjusters;
+//import java.time.temporal.TemporalAdjusters;
 import java.time.DateTimeException;
 import java.lang.IndexOutOfBoundsException;
 
@@ -21,7 +21,7 @@ public class FridayThirteenth {
   * @param day - day to check
   * @param year - year to check
   */
-  private void calculateDate(Month month, int day, Year year) {
+  public String calculateDate(Month month, int day, Year year) {
     // declare LocalDate variable and initialize to null
     LocalDate date = null;
 
@@ -31,17 +31,21 @@ public class FridayThirteenth {
 
       // if the date is on Friday 13th, print true
       if (date.getDayOfWeek() == DayOfWeek.FRIDAY && date.getDayOfMonth() == 13) {
-        System.out.println("true");
+//        System.out.println("true");
+    	  return "true";
       }
       else {
         // if not, print false
-        System.out.println("false");
+//        System.out.println("false");
+    	  return "false";
       }
     } catch(DateTimeException e) {
       // .atMonth() and .atDay() can throw Date Time Exceptions
       System.out.println("Date Time Exception");
       e.printStackTrace();
     }
+    
+    return "false";
   }
 
   /*
@@ -93,6 +97,7 @@ public class FridayThirteenth {
     }
 
     // call the method to see if the date is on friday the 13th
-    ft.calculateDate(month, day, year);
+    String answer = ft.calculateDate(month, day, year);
+    System.out.println(answer);
   }
 }

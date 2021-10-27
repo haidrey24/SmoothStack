@@ -14,10 +14,10 @@ import java.util.stream.Collectors;
 public class CommaSeparated {
   /*
   * This method takes a list of Integers, determines whether the int is an even
-  * or odd,
-  * @param list - list of Inegers to convert to string
+  * or odd
+  * @param list - list of Integers to convert to string
   */
-  private String deList(List<Integer> list) {
+  public String deList(List<Integer> list) {
     // map i to e or o depending on if int is even or odd
     return list.stream().map((i) -> {
       // mod with 2 to determine if even or odd
