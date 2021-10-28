@@ -21,7 +21,7 @@ public class Mondays {
   * @param year - passes in the current year to calculate
   * @param month - month to check
   */
-  private void calculateMonday(Year year, Month month) {
+  public void calculateMonday(Year year, Month month) {
     try {
       // retrieve the date using current year, given month, and first day
       // use temporal adjuster to get the first occurrence of a monday in month
@@ -59,7 +59,7 @@ public class Mondays {
     Year yr = Year.now();
     Month month = null;
 
-    // make sure the correct number of agruments are being passed to command line
+    // make sure the correct number of arguments are being passed to command line
     if (args.length <= 0 || args.length >= 2) {
       // print message and throw exception
       System.out.println("Make sure to only pass in a month");
