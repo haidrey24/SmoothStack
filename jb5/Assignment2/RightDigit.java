@@ -23,6 +23,7 @@ public class RightDigit {
   * @param args
   */
   public static void main(String[] args) {
+	  // create simple test to see if method works correctly
 	  RightDigit rd = new RightDigit();
 	  int[] arr = new int[]{101, 999, 483, 7596, 3848, 5994, 90922};
 	  rd.rightMost(arr);

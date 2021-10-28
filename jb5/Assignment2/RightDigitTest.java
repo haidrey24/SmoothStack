@@ -27,7 +27,7 @@ public class RightDigitTest {
 	}
 	
 	/*
-	 * list with all even numbers
+	 * correctly extracts the rightmost bit of each value
 	 */
 	@Test
 	public void rightMostTest() {
