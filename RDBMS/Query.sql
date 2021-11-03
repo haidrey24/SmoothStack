@@ -1,11 +1,12 @@
 /*
 * RDBMS question 1
 */
-select noOfCopies # retrieve the number of copies
-from tbl_book, tbl_book_copies, tbl_library_branch # necessary tables to search
-where tbl_book.bookId = tbl_book_copies.bookId # check if the book Id's match
-and tbl_book_copies.branchId = tbl_library_branch.branchId # check if branchId's match
-and tbl_book.title = 'The Lost Tribe'; # check for correct book
+select noOfCopies, branchName
+from tbl_book_copies
+	inner join tbl_book on tbl_book_copies.bookId = tbl_book.bookId
+	inner join tbl_library_branch on tbl_book_copies.branchId = tbl_library_branch.branchId
+where tbl_book.title = 'The Lost Tribe'
+and tbl_library_branch.branchName = 'Sharpstown';
 
 /*
 * RDBMS question 2
@@ -55,7 +56,13 @@ group by tbl_borrower.cardNo having count(tbl_book_loans.bookId) > 5; # make sur
 * RDBMS question 7
 */
 select tbl_book.title, tbl_book_copies.noOfCopies # retrieve necessary fields
-from (((tbl_author natural join tbl_book) natural join tbl_book_copies) natural join tbl_library_branch) # natural join extracts all values that match across each table
-where tbl_author.authorName = 'Stephen King' # searching for stephen king as author
-and tbl_library_branch.branchName = 'Central'; # searching for central library branch
+from (((tbl_book inner join tbl_author on tbl_book.authId = tbl_author.authorId) 
+		inner join tbl_book_copies on tbl_book.bookId = tbl_book_copies.bookId)
+		inner join tbl_library_branch on tbl_book_copies.branchId = tbl_library_branch.branchId) 
+where tbl_author.authorName = 'Stephen King'
+and tbl_library_branch.branchName = 'Central';
+
+
+
+
 
